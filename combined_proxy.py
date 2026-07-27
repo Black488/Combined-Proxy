@@ -1,3 +1,4 @@
+# === REPLACE the entire file on GitHub: Black488/Combined-Proxy/combined_proxy.py ===
 #!/usr/bin/env python3
 import os, json, time, logging
 from flask import Flask, request, Response, stream_with_context
@@ -14,12 +15,14 @@ NAVY_KEYS = get_keys("NAVY_KEYS")
 NVIDIA_KEYS = get_keys("NVIDIA_KEYS")
 KENARI_KEYS = get_keys("KENARI_KEYS")
 TOKENREPLY_KEYS = get_keys("TOKENREPLY_KEYS")
+ZEN_KEYS = get_keys("ZEN_KEYS")
 
 BASE_URLS = {
     "kenari": "https://kenari.id/v1",
     "navy": os.environ.get("NAVY_API_BASE", ""),
     "nvidia": os.environ.get("NVIDIA_API_BASE", ""),
     "tokenreply": "https://api.tokenreply.com/v1",
+    "zen": "https://opencode.ai/zen/v1",
 }
 
 class KeyRotator:
@@ -45,6 +48,7 @@ rotators = {
     "navy": KeyRotator(NAVY_KEYS, 30),
     "nvidia": KeyRotator(NVIDIA_KEYS, 10),
     "tokenreply": KeyRotator(TOKENREPLY_KEYS, 30),
+    "zen": KeyRotator(ZEN_KEYS, 30),
 }
 
 ROUTING = {
@@ -68,10 +72,11 @@ ROUTING = {
     "[TokenReply] Grok 4.20 MA High": ("tokenreply", "grok-4.20-multi-agent-high"),
     "[TokenReply] Grok 4.20 (°REAS)": ("tokenreply", "grok-4.20-0309-reasoning"),
     "[TokenReply] Grok 4.3 High": ("tokenreply", "grok-4.3-high"),
+    "[Zen] DeepSeek V4 Flash (Free)": ("zen", "deepseek-v4-flash-free"),
+    "[Zen] Mimo-v2.5 (Free)": ("zen", "mimo-v2.5-free"),
     "[Kenari] Hy3 (Free)": ("kenari", "hy3:free"),
     "[Kenari] Kimi K2.6 (Free)": ("kenari", "kimi-k2-6:free"),
     "[Kenari] Kimi K2.7 Code (Free)": ("kenari", "kimi-k2-7-code:free"),
-    "[Kenari] Mimo-v2.5 (Free)": ("kenari", "mimo-v2-5:free"),
 }
 
 @app.after_request
@@ -162,4 +167,4 @@ def proxy(path):
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     log.info(f"Starting Main Proxy on port {port}")
-    app.run(host='0.0.0.0', port=port, threaded=True)
+    app.run(host='0.0.0.0', port=port, threaded=True
