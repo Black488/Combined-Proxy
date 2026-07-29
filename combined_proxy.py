@@ -1,4 +1,4 @@
-# === REPLACE the entire file on GitHub: Black488/Combined-Proxy/combined_proxy.py ===
+# === REPLACE the Entire file on GitHub: Black488/Combined-Proxy/combined_proxy.py ===
 #!/usr/bin/env python3
 import os, json, time, logging
 from flask import Flask, request, Response, stream_with_context
