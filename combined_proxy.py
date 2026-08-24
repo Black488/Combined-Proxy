@@ -1,4 +1,3 @@
-# === REPLACE the Entire file on GitHub: Black488/Combined-Proxy/combined_proxy.py ===
 #!/usr/bin/env python3
 import os, json, time, logging
 from flask import Flask, request, Response, stream_with_context
@@ -57,26 +56,19 @@ ROUTING = {
     "[Navy] Mimo-v2.5-pro (1.5x)": ("navy", "mimo-v2.5-pro"),
     "[Navy] Gemini 3 Flash (°REAS)": ("navy", "gemini-3-flash-preview-thinking"),
     "[Navy] Llama 4 Scout (10M)": ("navy", "llama-4-scout"),
-    "[Navy] Grok 4.1 Fast (1.5x)": ("navy", "grok-4.1-fast-non-reasoning"),
-    "[Navy] Grok 4.5 (500k) (6x)": ("navy", "grok-4.5"),
     "[Navy] Hermes 4 405B (131k) (4x)": ("navy", "hermes-4-405b"),
-    "[Navy] GLM 4.7 (200k)": ("navy", "glm-4.7"),
-    "[NVIDIA] GLM 5.2": ("nvidia", "z-ai/glm-5.2"),
     "[NVIDIA] MiniMax M3": ("nvidia", "minimaxai/minimax-m3"),
     "[NVIDIA] Mistral 3 (256k)": ("nvidia", "mistralai/mistral-large-3-675b-instruct-2512"),
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
     "[NVIDIA] Step 3.7 Flash": ("nvidia", "stepfun-ai/step-3.7-flash"),
+    "[NVIDIA] DeepSeek V4 Flash (0731)": ("nvidia", "deepseek-v4-flash-0731"),
     "[TokenReply] DeepSeek V4 Pro": ("tokenreply", "deepseek-ai/deepseek-v4-pro"),
     "[TokenReply] GLM 5.2": ("tokenreply", "z-ai/glm-5.2"),
     "[TokenReply] Grok 4.20 Fast": ("tokenreply", "grok-4.20-fast"),
-    "[TokenReply] Grok 4.20 MA High": ("tokenreply", "grok-4.20-multi-agent-high"),
-    "[TokenReply] Grok 4.20 (°REAS)": ("tokenreply", "grok-4.20-0309-reasoning"),
-    "[TokenReply] Grok 4.3 High": ("tokenreply", "grok-4.3-high"),
-    "[Zen] DeepSeek V4 Flash": ("zen", "deepseek-v4-flash-free"),
     "[Zen] Mimo-v2.5": ("zen", "mimo-v2.5-free"),
     "[Kenari] Hy3": ("kenari", "hy3:free"),
-    "[Kenari] Kimi K2.6": ("kenari", "kimi-k2-6:free"),
-    "[Kenari] Kimi K2.7 Code": ("kenari", "kimi-k2-7-code:free"),
+    "[Kenari] Muse Spark 1.2 Contributor": ("kenari", "muse-spark-1-2-contributor:free"),
+    "[Kenari] GLM 4.7 Flash": ("kenari", "glm-4-7-flash:free"),
 }
 
 @app.after_request
@@ -168,4 +160,3 @@ if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     log.info(f"Starting Main Proxy on port {port}")
     app.run(host='0.0.0.0', port=port, threaded=True)
-           
