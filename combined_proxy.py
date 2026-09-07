@@ -15,6 +15,7 @@ NVIDIA_KEYS = get_keys("NVIDIA_KEYS")
 KENARI_KEYS = get_keys("KENARI_KEYS")
 TOKENREPLY_KEYS = get_keys("TOKENREPLY_KEYS")
 ZEN_KEYS = get_keys("ZEN_KEYS")
+KIOS_KEYS = get_keys("KIOS_KEYS")
 
 BASE_URLS = {
     "kenari": "https://kenari.id/v1",
@@ -22,6 +23,7 @@ BASE_URLS = {
     "nvidia": os.environ.get("NVIDIA_API_BASE", ""),
     "tokenreply": "https://api.tokenreply.com/v1",
     "zen": "https://opencode.ai/zen/v1",
+    "kios": "https://router.kiosapi.com/v1",
 }
 
 class KeyRotator:
@@ -48,6 +50,7 @@ rotators = {
     "nvidia": KeyRotator(NVIDIA_KEYS, 10),
     "tokenreply": KeyRotator(TOKENREPLY_KEYS, 30),
     "zen": KeyRotator(ZEN_KEYS, 30),
+    "kios": KeyRotator(KIOS_KEYS, 30),
 }
 
 ROUTING = {
@@ -60,15 +63,20 @@ ROUTING = {
     "[NVIDIA] MiniMax M3": ("nvidia", "minimaxai/minimax-m3"),
     "[NVIDIA] Mistral 3 (256k)": ("nvidia", "mistralai/mistral-large-3-675b-instruct-2512"),
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
-    "[NVIDIA] Step 3.7 Flash": ("nvidia", "stepfun-ai/step-3.7-flash"),
     "[NVIDIA] DeepSeek V4 Flash (0731)": ("nvidia", "deepseek-v4-flash-0731"),
     "[TokenReply] DeepSeek V4 Pro": ("tokenreply", "deepseek-ai/deepseek-v4-pro"),
     "[TokenReply] GLM 5.2": ("tokenreply", "z-ai/glm-5.2"),
     "[TokenReply] Grok 4.20 Fast": ("tokenreply", "grok-4.20-fast"),
     "[Zen] Mimo-v2.5": ("zen", "mimo-v2.5-free"),
     "[Kenari] Hy3": ("kenari", "hy3:free"),
-    "[Kenari] Muse Spark 1.2 Contributor": ("kenari", "muse-spark-1-2-contributor:free"),
     "[Kenari] GLM 4.7 Flash": ("kenari", "glm-4-7-flash:free"),
+    "[Kenari] Kimi K2.6": ("kenari", "kimi-k2-6:free"),
+    "[Kios] Mimo-v2.5": ("kios", "oc/mimo-v2.5"),
+    "[Kios] GLM 5.3 Flash": ("kios", "glm-5.3-flash"),
+    "[Kios] Grok 4.6": ("kios", "grok-4.6"),
+    "[Kios] Kimi K3": ("kios", "kimi-k3"),
+    "[Kios] Qwen 3.8 Flash": ("kios", "qwen3.8-flash"),
+    "[Kios] Muse Spark 1.3 Contributor": ("kios", "oc/muse-spark-1.3-contributor"),
 }
 
 @app.after_request
