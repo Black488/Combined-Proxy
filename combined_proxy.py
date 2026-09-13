@@ -16,6 +16,7 @@ KENARI_KEYS = get_keys("KENARI_KEYS")
 TOKENREPLY_KEYS = get_keys("TOKENREPLY_KEYS")
 ZEN_KEYS = get_keys("ZEN_KEYS")
 KIOS_KEYS = get_keys("KIOS_KEYS")
+UNOROUTER_KEYS = get_keys("UNOROUTER_KEYS")
 
 BASE_URLS = {
     "kenari": "https://kenari.id/v1",
@@ -24,6 +25,7 @@ BASE_URLS = {
     "tokenreply": "https://api.tokenreply.com/v1",
     "zen": "https://opencode.ai/zen/v1",
     "kios": "https://router.kiosapi.com/v1",
+    "unorouter": "https://api.unorouter.com/v1",
 }
 
 class KeyRotator:
@@ -51,6 +53,7 @@ rotators = {
     "tokenreply": KeyRotator(TOKENREPLY_KEYS, 30),
     "zen": KeyRotator(ZEN_KEYS, 30),
     "kios": KeyRotator(KIOS_KEYS, 30),
+    "unorouter": KeyRotator(UNOROUTER_KEYS, 30),
 }
 
 ROUTING = {
@@ -77,6 +80,7 @@ ROUTING = {
     "[Kios] Muse Spark 1.3 Contributor": ("kios", "oc/muse-spark-1.3-contributor"),
     "[Kios] MiniMax M3": ("kios", "minimax-m3"),
     "[Kios] Hy3": ("kios", "hy3"),
+    "[Unorouter] Step 3.7 Flash": ("unorouter", "step-3.7-flash:free"),
 }
 
 @app.after_request
