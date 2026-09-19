@@ -65,9 +65,8 @@ ROUTING = {
     "[Navy] Hermes 4 405B (131k) (4x)": ("navy", "hermes-4-405b"),
     "[NVIDIA] Mistral 3 (256k)": ("nvidia", "mistralai/mistral-large-3-675b-instruct-2512"),
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
-    "[NVIDIA] DeepSeek V4 Flash (0731)": ("nvidia", "deepseek-v4-flash-0731"),
     "[NVIDIA] Kimi K3": ("nvidia", "moonshotai/kimi-k3"),
-    "[NVIDIA] DeepSeek V4 Pro (0813)": ("nvidia", "deepseek-ai/deepseek-v4-pro-0813"),
+    "[NVIDIA] GLM 5.3": ("nvidia", "z-ai/glm-5-3"),
     "[TokenReply] Grok 4.20 Fast": ("tokenreply", "grok-4.20-fast"),
     "[TokenReply] Grok 4.6": ("tokenreply", "grok-4.6"),
     "[TokenReply] Kimi K3": ("tokenreply", "moonshotai/kimi-k3"),
@@ -76,11 +75,11 @@ ROUTING = {
     "[Kenari] Kimi K2.6": ("kenari", "kimi-k2-6:free"),
     "[Kios] Mimo-v2.5": ("kios", "oc/mimo-v2.5"),
     "[Kios] Kimi K3": ("kios", "kimi-k3"),
-    "[Kios] Qwen 3.8 Flash": ("kios", "qwen3.8-flash"),
     "[Kios] Muse Spark 1.3 Contributor": ("kios", "oc/muse-spark-1.3-contributor"),
-    "[Kios] MiniMax M3": ("kios", "minimax-m3"),
-    "[Kios] Hy3": ("kios", "hy3"),
-    "[Unorouter] Step 3.7 Flash": ("unorouter", "step-3.7-flash:free"),
+    "[Kios] DeepSeek V4 Flash 0731": ("kios", "deepseek-v4-flash-0731-free"),
+    "[Kios] Step 3.7 Flash": ("kios", "step-3.7-flash"),
+    "[Kios] GLM 5.3 Flash": ("kios", "glm-5.3-flash-free"),
+    "[Kios] Grok 4.6": ("kios", "grok-4.6-free"),
 }
 
 @app.after_request
