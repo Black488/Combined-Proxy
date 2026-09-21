@@ -67,6 +67,7 @@ ROUTING = {
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
     "[NVIDIA] Kimi K3": ("nvidia", "moonshotai/kimi-k3"),
     "[NVIDIA] GLM 5.3": ("nvidia", "z-ai/glm-5-3"),
+    "[NVIDIA] GLM 5.3 Flash": ("nvidia", "z-ai/glm-5.3-flash"),
     "[TokenReply] Grok 4.20 Fast": ("tokenreply", "grok-4.20-fast"),
     "[TokenReply] Grok 4.6": ("tokenreply", "grok-4.6"),
     "[TokenReply] Kimi K3": ("tokenreply", "moonshotai/kimi-k3"),
