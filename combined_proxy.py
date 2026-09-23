@@ -81,6 +81,9 @@ ROUTING = {
     "[Kios] Step 3.7 Flash": ("kios", "step-3.7-flash"),
     "[Kios] GLM 5.3 Flash": ("kios", "glm-5.3-flash-free"),
     "[Kios] Grok 4.6": ("kios", "grok-4.6-free"),
+    "[Unorouter] GLM 5.3": ("unorouter", "glm-5.3:free"),
+    "[Unorouter] GLM 5.3 Flash": ("unorouter", "glm-5.3-flash:free"),
+    "[Unorouter] Step 3.7 Flash": ("unorouter", "step-3.7-flash:free"),
 }
 
 @app.after_request
