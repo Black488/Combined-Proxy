@@ -17,6 +17,7 @@ TOKENREPLY_KEYS = get_keys("TOKENREPLY_KEYS")
 ZEN_KEYS = get_keys("ZEN_KEYS")
 KIOS_KEYS = get_keys("KIOS_KEYS")
 UNOROUTER_KEYS = get_keys("UNOROUTER_KEYS")
+TOKENHARBOR_KEYS = get_keys("TOKENHARBOR_KEYS")
 
 BASE_URLS = {
     "kenari": "https://kenari.id/v1",
@@ -24,8 +25,9 @@ BASE_URLS = {
     "nvidia": os.environ.get("NVIDIA_API_BASE", ""),
     "tokenreply": "https://api.tokenreply.com/v1",
     "zen": "https://opencode.ai/zen/v1",
-    "kios": "https://router.kiosapi.com/v1",
+    "kios": "https://kiosapi.com/v1",
     "unorouter": "https://api.unorouter.com/v1",
+    "tokenharbor": "https://tokenharbor.ai/v1",
 }
 
 class KeyRotator:
@@ -54,15 +56,10 @@ rotators = {
     "zen": KeyRotator(ZEN_KEYS, 30),
     "kios": KeyRotator(KIOS_KEYS, 30),
     "unorouter": KeyRotator(UNOROUTER_KEYS, 30),
+    "tokenharbor": KeyRotator(TOKENHARBOR_KEYS, 30),
 }
 
 ROUTING = {
-    "[Navy] GPT-5.1 (2.5x)": ("navy", "gpt-5.1"),
-    "[Navy] GPT-5.4 (4.5x)": ("navy", "gpt-5.4"),
-    "[Navy] Mimo-v2.5-pro (1.5x)": ("navy", "mimo-v2.5-pro"),
-    "[Navy] Gemini 3 Flash (°REAS)": ("navy", "gemini-3-flash-preview-thinking"),
-    "[Navy] Llama 4 Scout (10M)": ("navy", "llama-4-scout"),
-    "[Navy] Hermes 4 405B (131k) (4x)": ("navy", "hermes-4-405b"),
     "[NVIDIA] Mistral 3 (256k)": ("nvidia", "mistralai/mistral-large-3-675b-instruct-2512"),
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
     "[NVIDIA] Kimi K3": ("nvidia", "moonshotai/kimi-k3"),
@@ -77,13 +74,15 @@ ROUTING = {
     "[Kios] Mimo-v2.5": ("kios", "oc/mimo-v2.5"),
     "[Kios] Kimi K3": ("kios", "kimi-k3"),
     "[Kios] Muse Spark 1.3 Contributor": ("kios", "oc/muse-spark-1.3-contributor"),
-    "[Kios] DeepSeek V4 Flash 0731": ("kios", "deepseek-v4-flash-0731-free"),
     "[Kios] Step 3.7 Flash": ("kios", "step-3.7-flash"),
     "[Kios] GLM 5.3 Flash": ("kios", "glm-5.3-flash-free"),
     "[Kios] Grok 4.6": ("kios", "grok-4.6-free"),
+    "[Kios] Grok 4.7": ("kios", "grok-4.7-free"),
     "[Unorouter] GLM 5.3": ("unorouter", "glm-5.3:free"),
     "[Unorouter] GLM 5.3 Flash": ("unorouter", "glm-5.3-flash:free"),
     "[Unorouter] Step 3.7 Flash": ("unorouter", "step-3.7-flash:free"),
+    "[TokenHarbor] Mimo-v2.6 Flash": ("tokenharbor", "mimo-v2.6-flash:free"),
+    "[TokenHarbor] DeepSeek V4.1 Flash": ("tokenharbor", "deepseek-v4.1-flash:free"),
 }
 
 @app.after_request
