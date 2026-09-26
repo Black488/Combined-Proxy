@@ -78,6 +78,8 @@ ROUTING = {
     "[Kios] GLM 5.3 Flash": ("kios", "glm-5.3-flash-free"),
     "[Kios] Grok 4.6": ("kios", "grok-4.6-free"),
     "[Kios] Grok 4.7": ("kios", "grok-4.7-free"),
+    "[Kios] GLM 5.3": ("kios", "glm-5.3-free"),
+    "[Kios] Grok 4.5": ("kios", "grok-4.5-free"),
     "[Unorouter] GLM 5.3": ("unorouter", "glm-5.3:free"),
     "[Unorouter] GLM 5.3 Flash": ("unorouter", "glm-5.3-flash:free"),
     "[Unorouter] Step 3.7 Flash": ("unorouter", "step-3.7-flash:free"),
