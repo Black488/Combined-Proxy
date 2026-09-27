@@ -80,6 +80,8 @@ ROUTING = {
     "[Kios] Grok 4.7": ("kios", "grok-4.7-free"),
     "[Kios] GLM 5.3": ("kios", "glm-5.3-free"),
     "[Kios] Grok 4.5": ("kios", "grok-4.5-free"),
+    "[Kios] Mimo-v2.6 Flash": ("kios", "mimo-v2.6-flash"),
+    "[Kios] LongCat 2.5 Preview": ("kios", "longcat-2.5-preview"),
     "[Unorouter] GLM 5.3": ("unorouter", "glm-5.3:free"),
     "[Unorouter] GLM 5.3 Flash": ("unorouter", "glm-5.3-flash:free"),
     "[Unorouter] Step 3.7 Flash": ("unorouter", "step-3.7-flash:free"),
@@ -175,4 +177,4 @@ def proxy(path):
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     log.info(f"Starting Main Proxy on port {port}")
-    app.run(host='0.0.0.0', port=port, threaded=True)
+    app.run(host='0.0.0.0', port=port, threaded=True)~
