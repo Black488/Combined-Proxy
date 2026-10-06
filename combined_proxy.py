@@ -60,14 +60,11 @@ rotators = {
 }
 
 ROUTING = {
-    "[NVIDIA] Mistral 3 (256k)": ("nvidia", "mistralai/mistral-large-3-675b-instruct-2512"),
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
     "[NVIDIA] Kimi K3": ("nvidia", "moonshotai/kimi-k3"),
     "[NVIDIA] GLM 5.3": ("nvidia", "z-ai/glm-5-3"),
     "[NVIDIA] GLM 5.3 Flash": ("nvidia", "z-ai/glm-5.3-flash"),
     "[TokenReply] Grok 4.20 Fast": ("tokenreply", "grok-4.20-fast"),
-    "[TokenReply] Grok 4.6": ("tokenreply", "grok-4.6"),
-    "[TokenReply] Kimi K3": ("tokenreply", "moonshotai/kimi-k3"),
     "[Kenari] Hy3": ("kenari", "hy3:free"),
     "[Kenari] GLM 4.7 Flash": ("kenari", "glm-4-7-flash:free"),
     "[Kenari] Kimi K2.6": ("kenari", "kimi-k2-6:free"),
@@ -75,16 +72,10 @@ ROUTING = {
     "[Kios] Kimi K3": ("kios", "kimi-k3"),
     "[Kios] Muse Spark 1.3 Contributor": ("kios", "oc/muse-spark-1.3-contributor"),
     "[Kios] Step 3.7 Flash": ("kios", "step-3.7-flash"),
-    "[Kios] GLM 5.3 Flash": ("kios", "glm-5.3-flash-free"),
-    "[Kios] Grok 4.6": ("kios", "grok-4.6-free"),
-    "[Kios] Grok 4.7": ("kios", "grok-4.7-free"),
     "[Kios] GLM 5.3": ("kios", "glm-5.3-free"),
-    "[Kios] Grok 4.5": ("kios", "grok-4.5-free"),
     "[Kios] Mimo-v2.6 Flash": ("kios", "mimo-v2.6-flash"),
-    "[Kios] LongCat 2.5 Preview": ("kios", "longcat-2.5-preview"),
-    "[Unorouter] GLM 5.3": ("unorouter", "glm-5.3:free"),
-    "[Unorouter] GLM 5.3 Flash": ("unorouter", "glm-5.3-flash:free"),
-    "[Unorouter] Step 3.7 Flash": ("unorouter", "step-3.7-flash:free"),
+    "[Kios] Claude Opus 4.8": ("kios", "claude-opus-4-8-free"),
+    "[Kios] DeepSeek V4.1 Flash": ("kios", "deepseek-v4.1-flash-free"),
     "[TokenHarbor] Mimo-v2.6 Flash": ("tokenharbor", "mimo-v2.6-flash:free"),
     "[TokenHarbor] DeepSeek V4.1 Flash": ("tokenharbor", "deepseek-v4.1-flash:free"),
 }
