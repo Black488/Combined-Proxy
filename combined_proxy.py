@@ -62,8 +62,8 @@ rotators = {
 ROUTING = {
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
     "[NVIDIA] Kimi K3": ("nvidia", "moonshotai/kimi-k3"),
-    "[NVIDIA] GLM 5.3": ("nvidia", "z-ai/glm-5-3"),
     "[NVIDIA] GLM 5.3 Flash": ("nvidia", "z-ai/glm-5.3-flash"),
+    "[NVIDIA] Step 5 Preview": ("nvidia", "stepfun-ai/step-5-preview"),
     "[TokenReply] Grok 4.20 Fast": ("tokenreply", "grok-4.20-fast"),
     "[Kenari] Hy3": ("kenari", "hy3:free"),
     "[Kenari] GLM 4.7 Flash": ("kenari", "glm-4-7-flash:free"),
