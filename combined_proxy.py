@@ -61,21 +61,15 @@ rotators = {
 
 ROUTING = {
     "[NVIDIA] Nemotron 3 Ultra": ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
-    "[NVIDIA] Kimi K3": ("nvidia", "moonshotai/kimi-k3"),
     "[NVIDIA] GLM 5.3 Flash": ("nvidia", "z-ai/glm-5.3-flash"),
     "[NVIDIA] Step 5 Preview": ("nvidia", "stepfun-ai/step-5-preview"),
     "[TokenReply] Grok 4.20 Fast": ("tokenreply", "grok-4.20-fast"),
     "[Kenari] Hy3": ("kenari", "hy3:free"),
     "[Kenari] GLM 4.7 Flash": ("kenari", "glm-4-7-flash:free"),
     "[Kenari] Kimi K2.6": ("kenari", "kimi-k2-6:free"),
-    "[Kios] Mimo-v2.5": ("kios", "oc/mimo-v2.5"),
-    "[Kios] Kimi K3": ("kios", "kimi-k3"),
-    "[Kios] Muse Spark 1.3 Contributor": ("kios", "oc/muse-spark-1.3-contributor"),
-    "[Kios] Step 3.7 Flash": ("kios", "step-3.7-flash"),
-    "[Kios] GLM 5.3": ("kios", "glm-5.3-free"),
     "[Kios] Mimo-v2.6 Flash": ("kios", "mimo-v2.6-flash"),
-    "[Kios] Claude Opus 4.8": ("kios", "claude-opus-4-8-free"),
     "[Kios] DeepSeek V4.1 Flash": ("kios", "deepseek-v4.1-flash-free"),
+    "[Kios] Qwen 3.8": ("kios", "qwen3.8-flash:free"),
     "[TokenHarbor] Mimo-v2.6 Flash": ("tokenharbor", "mimo-v2.6-flash:free"),
     "[TokenHarbor] DeepSeek V4.1 Flash": ("tokenharbor", "deepseek-v4.1-flash:free"),
 }
